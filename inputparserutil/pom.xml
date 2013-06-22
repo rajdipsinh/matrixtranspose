@@ -102,7 +102,7 @@
     </dependencies>
 
     <build>
-        <finalName>samplejar</finalName>
+        <finalName>inputparser</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

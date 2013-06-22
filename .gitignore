@@ -1,4 +1,4 @@
 target/
 .idea/
 output/
-.iml
+*.iml

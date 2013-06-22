@@ -14,6 +14,7 @@ import java.io.IOException;
 public class MatrixTransposeReducer extends Reducer<Text, NullWritable, Text, NullWritable> {
 
     private final NullWritable value = NullWritable.get();
+
     @Override
     public void reduce(Text key, Iterable<NullWritable> values, Context context) throws IOException, InterruptedException {
 

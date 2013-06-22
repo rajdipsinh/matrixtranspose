@@ -13,7 +13,8 @@ public class InputParser {
     private static Text key = new Text();
     private static NullWritable value = NullWritable.get();
 
-    private InputParser(){}
+    private InputParser() {
+    }
 
     public void setInput(Text input) {
         this.input = input;

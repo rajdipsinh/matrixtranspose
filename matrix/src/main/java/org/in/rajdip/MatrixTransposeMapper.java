@@ -16,12 +16,8 @@ import java.io.IOException;
  * Time: 11:09 AM
  */
 public class MatrixTransposeMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
-
-    private final Text outKey = new Text();
-    private final NullWritable outVal = NullWritable.get();
-
     @Override
-    public void map (LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         InputParser.parseInput(value);
         context.write(InputParser.getKey(), InputParser.getValue());
     }
