@@ -38,5 +38,11 @@ distributed cache ans utilize in project.
     2 1 F
     2 2 I
     2 3 L
+    
+    USAGE:
+    Step 1: hdfs dfs -copyFromLocal parserlib.jar /lib/parserlib.jar
+    Step 2: hdfs dfs -copyFromLocal input/ /input
+    Step 3: hadoop jar matrixtranspose-${project.version} -l /lib/parserlib.jar -i /input/matrixinput.txt -o /output
+    hadoop jar 
     2 4 O
 
